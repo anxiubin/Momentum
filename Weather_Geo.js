@@ -1,9 +1,10 @@
+import apiConfig from 'apikeys';
+
 const COORDS_LS = 'coords';
-const API_KEY = 'e1149b38e9f975fcce8918dfb0a837fc';
 const weather = document.querySelector('.temp');
 
 function getWeather(lat,lng){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${apiConfig.weatherKey}&units=metric`
     ).then(function(response){
         return response.json();
     }).then(function(json){
