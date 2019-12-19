@@ -1,8 +1,7 @@
-require('dotenv').config();
+
 
 const COORDS_LS = 'coords';
 const weather = document.querySelector('.temp');
-const API_KEY = process.env.API_KEY;
 
 function getWeather(lat,lng){
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
