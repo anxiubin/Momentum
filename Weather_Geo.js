@@ -1,4 +1,4 @@
-
+const API_KEY = 'e1149b38e9f975fcce8918dfb0a837fc'
 
 const COORDS_LS = 'coords';
 const weather = document.querySelector('.temp');
