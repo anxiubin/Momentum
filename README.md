@@ -16,7 +16,7 @@ Clone coding Momentum of Google Chrome extensions
 
 ![screen1-1](./image/screen1-1.jpg)
 
-![screen1-1](./image/screen1-1.jpg)
+![screen1-2](./image/screen1-2.jpg)
 
 
 ## link
