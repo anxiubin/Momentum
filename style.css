@@ -1,9 +1,27 @@
-body{
+html{
     color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: url("https://source.unsplash.com/1600x900/?nature")
     no-repeat center center fixed;
     background-size: cover;
 }
+
+body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 
 
 .askName,
@@ -12,11 +30,11 @@ body{
 .pendingList,
 .finishedList {
     display: none;
+    text-align: center;
 }
 
 .askName{
     font-size: 6vw;
-    font-size: 6vh;
     font-weight: bold;
     text-align: center;
 }
@@ -26,22 +44,31 @@ body{
 }
 
 .temp{
-    font-size: 2.5vw;
-    font-size: 2.5vh;
-    margin-left: 1%;
+    font-size: 2vw;
     font-weight: bold;
 }
 
+#weatherGeo{
+    margin-top:1%;
+    margin-left:1%;
+}
+
 input{
-    background-color:transparent;
-    border-right:0px; border-top:0px; border-left:0px;
-    border-color: white;
-    font-size: 2vw;
-    font-size: 2vh;
+    background: 0;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    font-size: 2.5vw;
     text-align: center;
     width: 30vw;
-    color: yellow;
+    color: white;
+    font-weight: bold;
 }
+
+input:focus {
+    outline: none;
+    color: white;
+}
+
 ::placeholder{
     color:white;
     text-align: center;
@@ -55,31 +82,44 @@ input{
 }
 
 .time{
-    font-size: 17vw;
-    font-size: 17vh;
+    font-size: 16vw;
     margin-top:0;
     margin-bottom: 2%;
+    text-align: center;
+    font-weight: normal;
 }
 
 .date{
     font-size: 3vw;
-    font-size: 3vh;
     font-weight: bold;
+    text-align: center;
 }
 
 .greeting{
     font-size: 4vw;
-    font-size: 4vh;
     font-weight: bolder;
     margin-bottom: 5%;
+    text-align: center;
 }
 
 .pendingList,
-.finishedList {
-    margin-top: 2%;
-    font-size: 2.5vw;
-    font-size: 2.5vh;
+.finishedList{
+    margin-top: 5%;
+    text-align: center;
+    font-weight: bold;
 }
+
+.pendingList{
+    font-size: 2.5vw;
+}
+
+.finishedList{
+    float: right;
+    font-size: 2vw;
+    margin-right: 7%;
+}
+
+
 
 li {
     list-style: none;
@@ -87,10 +127,8 @@ li {
     margin-left: 0;
     color: white;
     font-size: 2vw;
-    font-size: 2vh;
-    height: 2.8vh;
-    background-color: rgba(0,0,0,0.5) ;
-    width: 30vw
+    height: 2.8vw;
+    text-align: center;
   }
 
 button {
@@ -100,8 +138,3 @@ button {
     cursor:pointer;
     overflow: hidden;  
   }
-
-.ul-pending,
-.ul-finished{
-    padding-left: 0;
-}
