@@ -153,13 +153,13 @@ button {
     }
 
     .askName {
-        font-size: 150px;
+        font-size: 80px;
     }
 
     input {
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
-        width: 250px;
+        width: 350px;
     }
 
     .greeting {
